@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:conext=".Sortword">
+
+    <LinearLayout
+        android:id="@+id/layoutObject"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp">
+
+        <ImageButton
+            android:id="@+id/ibtnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/txtObject"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="Luyện nghe"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@id/layoutObject"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:id="@+id/layoutO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ibtnObject"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/object_black" />
+
+            <TextView
+                android:id="@+id/txtO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Chủ đề"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ibtnLuggage"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/luggage_blue" />
+
+            <TextView
+                android:id="@+id/txtGames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Games"
+                android:textColor="#14AFB4"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ibtnAnchor"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/anchor_black" />
+
+            <TextView
+                android:id="@+id/txtCoutinue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luyện tập"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:text="Hãy sắp xếp các từ theo thứ tự đúng"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/botron2"
+        android:layout_gravity="center"
+        android:text="Bắt đầu"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        />
+
+</LinearLayout>

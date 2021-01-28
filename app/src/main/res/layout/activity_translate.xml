@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Translate">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dịch"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="#000"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:textAlignment="center"/>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/textArea_information"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/backgroud_edit"
+        android:gravity="top|left"
+        android:hint="Nhập văn bản cần dịch "
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:overScrollMode="always"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageButton
+        android:id="@+id/btn_micro"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:tag="micro"
+        app:layout_constraintBottom_toBottomOf="@+id/textArea_information"
+        app:layout_constraintEnd_toEndOf="@+id/textArea_information"
+        app:layout_constraintTop_toTopOf="@+id/textArea_information"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/microphone_outline" />
+
+    <TextView
+        android:id="@+id/mean_translate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="68dp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:text=""
+        android:textSize="20sp"
+        android:background="@drawable/backgroud_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textArea_information" />
+
+    <ImageButton
+        android:id="@+id/volumn1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/mean_translate"
+        app:layout_constraintEnd_toEndOf="@+id/mean_translate"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_copy"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/volume_high" />
+
+    <ImageButton
+        android:id="@+id/volumn2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textArea_information"
+        app:layout_constraintEnd_toEndOf="@+id/textArea_information"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textArea_information"
+        app:layout_constraintTop_toBottomOf="@+id/btn_micro"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/volume_high" />
+
+    <ImageButton
+        android:id="@+id/btn_copy"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_45sdp"
+        app:layout_constraintEnd_toEndOf="@+id/mean_translate"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/mean_translate"
+        app:layout_constraintTop_toTopOf="@+id/mean_translate"
+        app:srcCompat="@drawable/content_copy" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/mean_translate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textArea_information"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/btn_translate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@drawable/background_button"
+            android:text="Anh-việt" />
+
+        <Button
+            android:id="@+id/btn_translate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textColor="#fff"
+            android:background="@drawable/background_button"
+            android:layout_weight="1"
+            android:text="việt-anh" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_210sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mean_translate"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:background="@drawable/vien">
+        <TextView
+            android:id="@+id/txtChuDe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHỦ ĐỀ"
+            android:textSize="20sp"
+            android:textColor="#14AFB4"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/txtTenChuDe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TÊN CHỦ ĐỀ"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/txtDiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Điểm"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/txtSoDiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/txtTongDiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/10"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="180dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="10dp"
+                android:progress="0"
+                android:min="0"
+                android:max="10"
+                android:layout_gravity="center"
+               />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

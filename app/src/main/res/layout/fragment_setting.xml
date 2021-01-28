@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingFragment">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TÊN TÀI KHOẢN"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input"
+            android:drawableLeft="@drawable/account_outline"
+            android:paddingLeft="10dp"
+            android:hint="Nguyễn Văn A"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SỐ ĐIỆN THOẠI"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input"
+            android:inputType="numberPassword"
+            android:drawableLeft="@drawable/cellphone"
+            android:paddingLeft="10dp"
+            android:hint="1111-1111"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EMAIL"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input"
+            android:drawableLeft="@drawable/email_outline"
+            android:paddingLeft="10dp"
+            android:hint="name@email.com"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="MẬT KHẨU"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input"
+            android:inputType="numberPassword"
+            android:drawableLeft="@drawable/eye_off_outline"
+            android:paddingLeft="10dp"
+            android:hint="************"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>
